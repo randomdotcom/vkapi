@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/stylesheets/auth.css">
+    <link rel="stylesheet" href="../public/stylesheets/common.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+    <div class="auth">
+        <div class="auth-button">
+            <input class="auth-button__button" target=_blank type="button" value="АВТОРИЗАЦИЯ" onclick="auth()">
+            <p class="auth__tip tip"><span class="tip__step">1.</span> Нажмите на кнопку</p>
+        </div>
+        <div class="auth-access">
+            <div class="auth__token auth-token">
+                <input id="inputToken" class="auth-token__input" type="text">
+                <button id="acceptToken" class="auth-token__access"><i class="fa fa-check fa-fw" aria-hidden="true"></i></button>
+            </div>
+            <p class="auth__tip tip"><span class="tip__step">2.</span> Скопируйте данные из адресной строки: access_token=<strong>12b867a0784c</strong>& и вставьте</p>
+        </div>
+    </div>
+    <script src="../public/javascripts/index.js"></script>
+</body>
+</html>

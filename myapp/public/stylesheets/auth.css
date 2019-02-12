@@ -1,0 +1,71 @@
+.auth {
+    display: flex;
+    justify-content: space-around;
+}
+
+.auth-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-token {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-token__input {
+    background-color: #f1efef;
+    border: 1px solid rgb(68, 129, 129);
+    font-size: 1rem;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    padding-left: 13px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    width: 30vw;
+    transition: border-color 0.05s linear;
+}
+
+i {
+    font-size: 1rem;
+}
+
+.auth-token__access {
+    background-color: rgb(68, 129, 129);
+    color: #f2f2f2;
+    cursor: pointer;
+    padding-left: 2px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    transition: background-color 0.05s linear;
+}
+
+.auth-token:hover .auth-token__access{
+    background-color: rgb(68, 185, 185);
+}
+
+.auth-token:hover .auth-token__input{
+    border-color: rgb(68, 185, 185);
+}
+
+.auth__tip {
+    font-size: 0.7rem;
+    margin-top: 5px;
+    cursor: default;
+    user-select: none;
+}
+
+.tip__step {
+    background-color: rgb(54, 54, 54);
+    color: #f2f2f2;
+    padding: 1px 2px;
+    border-radius: 4px;
+    font-style: italic;
+    font-weight: bold;
+}
